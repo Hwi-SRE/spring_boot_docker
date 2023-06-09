@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
         - name: container-spring
-          image: swr.ap-southeast-3.myhuaweicloud.com/wesight/spring-test:v1.1
+          image: spring-test:v1.1
           resources:
             limits:
               cpu: 250m
