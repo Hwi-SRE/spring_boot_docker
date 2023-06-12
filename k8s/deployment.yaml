@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
         - name: container-spring
-          image: spring-test:latest
+          image: swr.ap-southeast-3.myhuaweicloud.com/demo-sre/spring-demo:latest
           resources:
             limits:
               cpu: 250m
