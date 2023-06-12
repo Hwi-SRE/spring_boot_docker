@@ -43,3 +43,23 @@ spec:
       maxSurge: 25%
   revisionHistoryLimit: 10
   progressDeadlineSeconds: 600
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: spring-service
+  namespace: default
+  labels:
+    app: spring-cont
+spec:
+  ports:
+    - name: cce-service-0
+      protocol: TCP
+      port: 8080
+      targetPort: 8000
+      nodePort: 30120
+  selector:
+    app: spring-cont
+  type: NodePort
