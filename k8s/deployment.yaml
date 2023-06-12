@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
         - name: container-spring
-          image: spring-test:v1.1
+          image: spring-test:latest
           resources:
             limits:
               cpu: 250m
